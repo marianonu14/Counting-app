@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
+const count = 0
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header-container">
+        <h1>Countainer App</h1>
       </header>
+      <div className="main-container">
+        <div className="counter">{count}</div>
+        <button className='btn'>Add +</button>
+        <button className='btn'>Reset</button>
+      </div>
     </div>
   );
 }
