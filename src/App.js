@@ -1,4 +1,5 @@
 import './styles/App.css';
+import Buttons from './components/Buttons';
 import { useState } from 'react';
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
       </header>
       <div className="main-container">
         <div className="counter">{count}</div>
-        <button className='btn' onClick={add}>Add +</button>
-        <button className='btn' onClick={reset}>Reset</button>
+        <Buttons handle={add} text="Add+" />
+        <Buttons handle={reset} text="Reset" />
       </div>
     </div>
   );
